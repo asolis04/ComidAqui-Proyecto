@@ -1,0 +1,117 @@
+#encabezado {
+    position: relative;
+    left: 450px;
+    top: -50px
+}
+
+#encabezado h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#all-contenido {
+    padding-top: 80px;
+}
+
+#Tarjeta {
+    float: left;
+    padding: 20px 15px 20px 15px;
+}
+
+#Usuario {
+    float: right;
+    padding: 5px 15px 5px 15px;
+}
+
+#sctFactura h3 {
+    text-align: center;
+}
+
+#sctFactura table {
+    border: 2px solid #582E44;
+    border-collapse: collapse;
+    width: 459px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#sctFactura table th {
+    background-color: #582E44;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#sctFactura table td {
+    padding: 15px;
+    width: 65px;
+    text-align: center;
+}
+
+#botones {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#btnPagarRestaurante {
+    background: #D7B957;
+    border: 3px solid #D7B957;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+#btnPagarRestaurante :hover {
+    background-color: #fff;
+    color: #D7B957;
+}
+
+#btnPagarEnLinea {
+    background: #D7B957;
+    border: 3px solid #D7B957;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+#btnPagarEnLinea :hover {
+    background-color: #fff;
+    color: #D7B957;
+}
+
+#sctPagar {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+footer {
+    /*  background-color: #8E7A3D;*/
+    text-align: center;
+}
+
+#sctFooter {
+    /*   background-color: #8E7A3D;*/
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+    justify-content: center;
+    /*  background-color: #8E7A3D;*/
+}
+
+footer div h2 {
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+
+#Usuario {
+    float: right;
+    padding: 5px 15px 5px 15px;
+}
+
+#sctTarjetasRegistradas {
+    text-align: center;
+    position: relative;
+    left: -140px;
+}
+
+#tblTarjetas {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 2px solid #D7B957;
+    border-collapse: collapse;
+}
+
+#tblTarjetas th {
+    background-color: #D7B957;
+    padding: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+#tblTarjetas td {
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    background-color: #8E7A3D;
+    text-align: center;
+}
+
+#sctFooter {
+    background-color: #8E7A3D;
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #8E7A3D;
+}
+
+footer div h2 {
+    text-align: center;
+}

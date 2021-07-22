@@ -1,0 +1,132 @@
+#sctForm {
+    align-items: center;
+    width: 500px;
+    margin: 0px 0px 20px 150px;
+    display: inline-block;
+}
+
+.tituloRegistrarRestaurante {
+    height: 52px;
+    width: 1021PX;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    background: #a8293c;
+    color: white;
+    margin: 0px;
+}
+
+.cajonDeAnadirRest {
+    height: 40px;
+    width: 1000px;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-star;
+    border-bottom: 5px solid #a8293c;
+}
+
+.cajonDeAnadirRest a {
+    font-size: 27px;
+    width: 205px;
+    margin: 1px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.error {
+    border: 2px solid #87b3df;
+}
+
+.cajonDeAnadirRest a:hover {
+    color: #a8293c;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s b957;
+}
+
+.datosRestaurantes,
+.formRestaurantes {
+    align-self: flex-end;
+}
+
+.formularioAgregarRestaurante {
+    width: 870px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 140px;
+}
+
+.datosRestaurantes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: space-around;
+    height: 100vh;
+}
+
+.formRestaurantes {
+    margin-bottom: 18px;
+}
+
+.checkboxRestaurantes {
+    width: 235px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 415px;
+    flex-direction: column;
+}
+
+#miFormularioRestaurantecheck {
+    display: block;
+    flex-direction: column;
+    width: 226px;
+    height: 100vh;
+}
+
+#miFormularioRestaurantecheck p {
+    height: 30px;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: underline #d7b957 solid 3px;
+}
+
+.registarRestaurantes :hover {
+    color: #582e44;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s b957;
+}
+
+#miFormularioRestaurantecheck label {
+    cursor: default;
+    width: 198px;
+    display: inline-block;
+    height: 37px;
+}
+
+button#btnRegistar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button#Borrar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}

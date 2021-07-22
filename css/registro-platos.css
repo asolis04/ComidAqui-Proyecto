@@ -1,0 +1,69 @@
+.container {
+    width: 80%;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #A8293C;
+}
+
+.aside-contenido h2 {
+    text-align: center;
+}
+
+#sctForm {
+    align-items: center;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+
+#btnRegistrar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background: #4d0e18;
+}
+
+.error {
+    border: 2px solid #582E44;
+}
+
+.form-horizontal input[type="text"] {
+    width: 80%;
+    border: none;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D1D1D1;
+    color: #5A5A5A;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+textarea {
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    resize: both;
+    padding-bottom: 20px;
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}

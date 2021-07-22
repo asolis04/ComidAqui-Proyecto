@@ -1,0 +1,51 @@
+.container {
+    width: 70%;
+}
+
+#all-contenido {
+    padding-top: 80px;
+}
+
+.banner-principal {
+    background: #a8293c;
+    padding: 15px 20px 15px 20px;
+    width: 50%;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    border-radius: 8px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#btn-reservar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btn-borrar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 10%;
+}

@@ -1,0 +1,117 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#headerPrincipal {
+    height: 180px;
+    padding: 0 1%;
+}
+
+
+/* Header: parte superior */
+
+#headerPrincipal .superior {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #A8293C;
+}
+
+#headerPrincipal .superior nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 25px;
+}
+
+#headerPrincipal .superior nav a {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+#headerPrincipal .superior nav a:hover {
+    color: #A8293C;
+    text-decoration: none;
+}
+
+
+/* Header: parte inferior */
+
+#headerPrincipal .inferior {
+    display: flex;
+    background-color: #BD7344;
+    height: 75px;
+}
+
+#headerPrincipal .inferior div h2 {
+    width: 300px;
+    height: 40px;
+    display: inline-block;
+}
+
+#headerPrincipal .inferior h4 {
+    width: 70px;
+    height: 30px;
+    margin: 15px 5px 0px 780px;
+    align-items: center;
+    display: inline;
+}
+
+#Menu {
+    float: left;
+    padding: 20px 15px 20px 15px;
+}
+
+#Usuario {
+    float: right;
+    padding: 5px 15px 5px 15px;
+}
+
+#sctMenusRegistrados {
+    text-align: center;
+}
+
+#tblMenus {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 2px solid #D7B957;
+    border-collapse: collapse;
+    width: 85%;
+}
+
+#tblMenus th {
+    background-color: #D7B957;
+    padding: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+#tblMenus td {
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    background-color: #8E7A3D;
+    text-align: center;
+}
+
+#sctFooter {
+    background-color: #8E7A3D;
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #8E7A3D;
+}
+
+footer div h2 {
+    text-align: center;
+}

@@ -1,0 +1,156 @@
+#sct-usuarios {
+    position: relative;
+    left: -215px;
+    top: -80px
+}
+
+.tituloComentarios {
+    height: 60px;
+    width: auto;
+    font-size: 45px;
+    background: #582e44;
+    margin: 0px;
+}
+
+.tituloComentarios h2 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.busquedaDeRestaurantes {
+    display: flex;
+    place-content: stretch space-evenly;
+    flex-flow: column nowrap;
+    float: right;
+    width: 770px;
+    height: 50px;
+    flex-direction: column;
+    position: relative;
+    left: -215px;
+    top: -80px
+}
+
+.busquedaDeRestaurantes h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.cajonComentarios p {
+    text-align: center;
+    font-size: 16px;
+    width: 1029px;
+}
+
+.cajonComentarios {
+    display: flex;
+    place-content: stretch space-evenly;
+    flex-flow: column nowrap;
+    float: right;
+    width: 1108px;
+    width: 770px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.cajonComentarios h3 {
+    text-align: center;
+    font-size: 20px;
+    width: 764px;
+}
+
+#sct-usuarios {
+    height: 300px;
+    width: 779px;
+}
+
+.buscar {
+    display: flex;
+    justify-content: center;
+    height: 29px;
+}
+
+#txt-filtro {
+    width: 348px;
+    height: 24px;
+}
+
+#tbl-usuarios thead {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 748px;
+}
+
+th {
+    width: 416px;
+    text-align: -webkit-right;
+    color: #582e44;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 8px;
+    border-top: 4px solid #d7b957;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#tbl-usuarios {
+    width: 20px;
+}
+
+tbody {
+    width: 20px;
+}
+
+tr {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    letter-spacing: normal;
+    vertical-align: baseline;
+}
+
+td {
+    letter-spacing: normal;
+    vertical-align: baseline;
+    text-align: center;
+    width: 426px;
+    height: 74px;
+    padding: 8px;
+    border-bottom: 1.5px solid #582e44;
+}
+
+table {
+    font-size: 12px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr:hover td {
+    background: whitesmoke;
+    color: #a8293c;
+}
+
+.registarRestaurantes :hover {
+    color: #582e44;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s b957;
+}
+
+button#btnRegistar {
+    border-top: 2px solid #bd7344;
+    border-bottom: 2px solid #bd7344;
+    border-left: 5px solid #bd7344;
+    border-right: 5px solid #bd7344;
+    width: 87px;
+    height: 27px;
+    font-size: 16px;
+    border-radius: 12px;
+    background-color: #bd7344;
+}

@@ -1,0 +1,70 @@
+#sctForm {
+    align-items: center;
+    width: 500px;
+    margin: 0px 0px 20px 150px;
+    display: inline-block;
+}
+
+#btnRegistrar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btnRegistrar :hover {
+    background-color: #fff;
+    color: #D7B957;
+}
+
+input[type="button"]:hover {
+    background: #4d0e18;
+}
+
+input[type="text"] {
+    border-bottom: 2px solid #D1D1D1;
+}
+
+textarea {
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    resize: both;
+    padding-bottom: 20px;
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #8E7A3D;
+}
+
+#sctFooter {
+    background-color: #8E7A3D;
+}
+
+footer div {
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #8E7A3D;
+}
+
+footer div h2 {
+    text-align: center;
+}
+
+.error {
+    border: 2px solid #582E44;
+}

@@ -1,0 +1,143 @@
+.registarGerentes {
+    width: 769px;
+    height: 204px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloRegistrarRestaurante {
+    height: 52px;
+    width: auto;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    background: #582e44;
+    color: white;
+    margin: 0px;
+}
+
+.datosGerentes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: flex-start;
+    height: 206px;
+    font-size: 22px;
+}
+
+.formGerentes {
+    margin: 12px;
+}
+
+.formGerentes :hover {
+    color: #a8293c;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s b957;
+}
+
+.nav-menu button a {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button#btnRegistar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button#Borrar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.listaGerentes h2 {
+    font-size: 24px;
+    text-decoration: underline #d7b957 solid 3px;
+    text-align: center;
+}
+
+#tbl-usuarios {
+    width: 1004px;
+    display: block;
+    justify-content: center;
+    float: right;
+}
+
+thead {
+    text-align: center;
+    width: 869px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+th {
+    text-align: center;
+    width: 293px;
+}
+
+tbody {
+    float: right;
+    width: 895px;
+    text-align: center;
+}
+
+td {
+    width: 264px;
+    text-align: -webkit-left;
+    font-size: 16px;
+    height: 30px;
+}
+
+table {
+    font-size: 12px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th {
+    width: 552px;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    border-top: 4px solid #d7b957;
+    border-bottom: 1px solid #fff;
+}
+
+td {
+    width: 230px;
+    padding: 8px;
+    border-bottom: 1.5px solid #582e44;
+}
+
+tr:hover td {
+    background: whitesmoke;
+    color: #a8293c;
+}

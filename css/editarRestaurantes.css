@@ -1,0 +1,117 @@
+.cajonDeAnadirRest {
+    height: 40px;
+    width: 771px;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-star;
+    border-bottom: 12px solid #a8293c;
+}
+
+.cajonDeAnadirRest a {
+    font-size: 27px;
+    width: 205px;
+    margin: 1px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.cajonDeAnadirRest a:hover {
+    color: #a8293c;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s b957;
+}
+
+.buscar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#buscar {
+    width: 246px;
+    height: 29px;
+}
+
+#tbl-usuarios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#sct-usuarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    float: right;
+    width: 773px;
+    height: 204px;
+    position: relative;
+    left: -215px;
+}
+
+thead {
+    text-align: -webkit-center;
+    font-size: 35px;
+    text-decoration-color: rgb(168, 41, 60);
+    color: rgb(168, 41, 60);
+    border-bottom: #d7b957 solid 3px;
+    width: 733px;
+}
+
+tbody {
+    text-align: -webkit-center;
+    font-size: 16px;
+    width: 687px;
+}
+
+#sctFooter {
+    background-color: #8E7A3D;
+}
+
+footer div {
+    display: flex;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #8E7A3D;
+    width: 1286px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+footer div h2 {
+    text-align: center;
+}
+
+table {
+    font-size: 12px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th {
+    width: 552px;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+}
+
+td {
+    width: 230px;
+    padding: 8px;
+    border-bottom: 1px solid #582e44;
+}
+
+tr:hover td {
+    background: whitesmoke;
+    color: #a8293c;
+}

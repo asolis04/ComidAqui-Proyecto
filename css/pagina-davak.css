@@ -1,0 +1,612 @@
+        /*Estilos Generados*/
+        
+        * {
+            box-sizing: content-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+         :focus {
+            outline: none;
+        }
+        
+        body {
+            color: #000000;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 18px;
+        }
+        
+        h3 {
+            font-weight: bold;
+        }
+        
+        .container {
+            width: 90%;
+            margin: auto;
+            background: #ffff;
+        }
+        /*Navigation*/
+        
+        .nav-menu a {
+            /*  color: #000000;
+            text-decoration: none;*/
+            text-decoration: none;
+            font-weight: bold;
+            color: #0000;
+            text-shadow: 0.5px 0.5px 0.5px #A8293C;
+            font-size: 20px;
+        }
+        
+        .nav-menu ul {
+            list-style: none;
+        }
+        
+        .nav-main {
+            font-size: 17px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 95px;
+            padding: 20px 0;
+        }
+        
+        .nav-logo {
+            width: 180px;
+        }
+        /*Nav izquierda*/
+        
+        .nav-main ul {
+            display: flex;
+        }
+        
+        .nav-main ul li {
+            padding: 10px
+        }
+        
+        .nav-main ul.nav-menu-right {
+            margin-right: 50px;
+        }
+        
+        .nav-main ul li a {
+            padding: 6px;
+        }
+        
+        .nav-main ul li a:hover {
+            border-bottom: 2px solid #A8293C;
+        }
+        /*Menu btn*/
+        
+        .menu-btn {
+            position: absolute;
+            cursor: pointer;
+            top: 15px;
+            right: 15px;
+            z-index: 2;
+            display: none;
+        }
+        /*Welcome Container*/
+        
+        .header-welcome {
+            width: 100%;
+            height: 450px;
+            background: url("../img/reservacion-dos.jpg") center/cover no-repeat;
+            /*   background-size: 70%;*/
+            border-radius: 1%;
+            padding: 50px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+            animation: movimiento 10s infinite linear alternate;
+        }
+        
+        @keyframes movimiento {
+            from {
+                background-position: bottom left;
+            }
+            to {
+                background-position: top right;
+            }
+        }
+        /*Restaurantes Cards*/
+        
+        .welcome {
+            display: flex;
+            /* align-items: flex-start;*/
+            font-weight: bold;
+            font-size: 40px;
+            padding-bottom: 30px;
+            color: #A8293C;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        /*Restaurantes*/
+        
+        .h2-mismo {
+            display: flex;
+            justify-content: center;
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #A8293C;
+        }
+        
+        .restaurante-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+        }
+        
+        .restaurante-card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 7%;
+        }
+        
+        .restaurante-card h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #A8293C;
+        }
+        
+        .restaurante-card a {
+            padding: 10px 0;
+            color: #000000;
+            text-transform: uppercase;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .restaurante-card a:hover {
+            text-decoration: underline;
+        }
+        /*Equipo*/
+        
+        .equipo-trabajo {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+        }
+        
+        .equipo-trabajo img {
+            width: 100%;
+            height: 180px;
+            border-radius: 7%;
+        }
+        
+        .equipo-trabajo h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #A8293C;
+        }
+        
+        .equipo-trabajo a {
+            padding: 10px 0;
+            color: #000000;
+            text-transform: uppercase;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .equipo-trabajo a:hover {
+            text-decoration: underline;
+        }
+        /*Servicios Cards*/
+        
+        .equipo-trabajo {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 10px 0;
+            margin-top: 10px;
+        }
+        
+        .equipo-trabajo img {
+            width: 100%;
+            height: 180px;
+            border-radius: 7%;
+        }
+        
+        .equipo-trabajo h3 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #A8293C;
+        }
+        /*Banner Explore */
+        
+        .cards-banner-one {
+            width: 100%;
+            height: 450px;
+            background: url("../img/restaurante-explorer.jpg") no-repeat center center/cover;
+            border-radius: 1%;
+            padding-bottom: 50px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /*  justify-content: center;*/
+        }
+        
+        .cards-banner-one .content {
+            width: 40%;
+            color: rgb(27, 26, 26);
+            font-size: 40px;
+        }
+        
+        .cards-banner-one p,
+        .cards-banner-two p {
+            margin: 10px 0 20px 0;
+        }
+        /*Reservación*/
+        
+        .banner {
+            /*  min-height: 60vh;*/
+            height: 530px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #A8293C;
+            padding-bottom: 20px;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+        
+        .card-content h3 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #A8293C;
+        }
+        
+        .card-img {
+            background: url("../img/phone-reservation.jpg") center/cover no-repeat;
+            border-radius: 1%;
+            height: 100%;
+        }
+        
+        .card-content {
+            background: #fff;
+            height: 330px;
+        }
+        
+        .card-content h3 {
+            text-align: center;
+            color: #A8293C;
+            padding: 25px 0 10px 0;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .form-row {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        form select,
+        form input {
+            display: block;
+            width: 100%;
+            margin: 15px 12px;
+            padding: 5px;
+            font-size: 15px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #eee;
+            font-weight: 300;
+        }
+        
+        form input[type=text],
+        form input[type=number],
+        form input::placeholder,
+        select {
+            color: #080707;
+        }
+        
+        form input[type=submit] {
+            color: #fff;
+            background: #A8293C;
+            padding: 12px 0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        form input[type=submit]:hover {
+            background: #4d0e18;
+        }
+        
+        @media(max-width: 992px) {
+            .card-container {
+                grid-template-columns: 100%;
+                width: 100vw;
+            }
+            .card-img {
+                height: 330px;
+            }
+        }
+        /*Formulario*/
+        
+        .form-nosotros {
+            width: 100%;
+            height: 530px;
+            margin: 50px auto;
+            display: flex;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px #A8293C;
+            border-radius: 1%;
+        }
+        /*Contact Info*/
+        
+        .form-nosotros .contact-info::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #f8f0d8;
+            opacity: 0.9;
+        }
+        
+        .form-nosotros .contact-info {
+            width: 38%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../img/unanse5.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        .info-title,
+        .info-items {
+            position: relative;
+            z-index: 2;
+            /*Se posicione encima del before*/
+            color: #A8293C;
+        }
+        /*Formulario de Conctacto*/
+        
+        .info-title {
+            margin-bottom: 60px;
+        }
+        
+        .info-title span {
+            font-size: 100px;
+            display: block;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .info-title h3 {
+            font-size: 26px;
+            text-align: center;
+        }
+        
+        .info-items p {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .info-items p:nth-child(1) span {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        
+        .info-items p:nth-child(2) span {
+            font-size: 40px;
+            margin-right: 15px;
+            margin-left: 4px;
+        }
+        
+        .form-nosotros form.form-contact {
+            width: 62%;
+            padding: 30px 40px;
+        }
+        
+        .form-contact h3 {
+            font-size: 25px;
+            font-weight: 600;
+            color: #A8293C;
+            margin-bottom: 30px;
+        }
+        
+        .form-contact .user-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-contact label {
+            font-weight: 600;
+        }
+        
+        .form-contact input,
+        .form-contact textarea {
+            width: 100%;
+            border: none;
+            padding: 8px 0px 5px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #D1D1D1;
+            color: #5A5A5A;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .form-contact textarea {
+            max-width: 100%;
+            min-width: 100%;
+            max-height: 90px;
+        }
+        
+        .form-contact input[type="button"] {
+            width: 180px;
+            background: #A8293C;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            align-self: flex-end;
+            color: #ffff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .form-contact input[type="reset"] {
+            width: 180px;
+            background: #A8293C;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            align-self: flex-end;
+            color: #ffff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .form-contact input[type="button"]:hover {
+            background: #4d0e18;
+        }
+        
+        .form-contact input[type="reset"]:hover {
+            background: #4d0e18;
+        }
+        
+        .social {
+            margin: 50px;
+        }
+        
+        .social p {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .social h3 {
+            margin-top: 30px;
+        }
+        
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .links a {
+            margin: 0px 30px;
+            font-size: 3rem;
+        }
+        
+        .footer {
+            color: #1f060a;
+            font-size: 12px;
+            padding: 20px 0;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        #map iframe {
+            width: 100%;
+        }
+        
+        @media (max-width: 700px) {
+            .menu-btn {
+                display: block;
+            }
+            .menu-btn:hover {
+                opacity: 0.5;
+            }
+            .nav-main ul.nav-menu {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #2f3640;
+                height: 100%;
+                padding: 30px;
+                opacity: 0.9;
+                transform: translate(-400px);
+                transition: transform .5s ease-in-out;
+            }
+            .nav-main ul.nav-menu.show {
+                transform: translate(-20px);
+            }
+            .nav-main ul.nav-menu li {
+                padding: 20px;
+                font-size: 14px;
+            }
+            .nav-menu a {
+                color: #fff;
+            }
+            .restaurante-card,
+            .servicios-card,
+            .equipo-trabajo {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .banner {
+                width: 80%;
+                margin-top: 130px;
+            }
+            .banner h2 {
+                margin-top: 60px;
+            }
+            .cards-banner-one .content {
+                width: 100%;
+                padding: 60px 20px;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .restaurante-card,
+            .servicios-card,
+            equipo-trabajo {
+                grid-template-columns: 1fr;
+            }
+            .restaurante-card .content,
+            .servicios-card .content,
+            .equipo-trabajo .content {
+                width: 100%;
+                padding: 60px 20px;
+            }
+            .footer-links .footer-container {
+                grid-template-columns: 1fr;
+            }
+            .footer-links .footer-container ul {
+                text-align: center;
+            }
+        }
+        
+        .error {
+            border: 1px solid #EF116C;
+        }
+        /*El ojito del pwd*/
+        
+        .password-container {
+            width: 235px;
+            display: flex;
+        }
+        
+        .password-container input {
+            border: 0px;
+            outline: none;
+        }
+        
+        .password-container span {
+            cursor: pointer;
+            align-self: center;
+        }

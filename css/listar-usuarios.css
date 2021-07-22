@@ -1,0 +1,26 @@
+#sctUsuariosRegistrados {
+    text-align: center;
+    position: relative;
+    left: -140px;
+}
+
+#tblUsuarios {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 2px solid #D7B957;
+    border-collapse: collapse;
+}
+
+#tblUsuarios th {
+    background-color: #D7B957;
+    padding: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+#tblUsuarios td {
+    padding: 15px;
+    text-align: center;
+}

@@ -1,0 +1,265 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background: #ffff;
+}
+
+#header-principal .superior {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: rgb(240, 239, 239);
+}
+
+#header-principal .superior .direccion-restaurante {
+    padding-right: 60%;
+    color: #582e44;
+}
+
+#header-principal .superior .hola-usuario {
+    color: #582e44;
+}
+
+#header-principal .superior .logo-comidaaqui {
+    background-image: url("../img/logo-comidaqui.JPG");
+    background-position: center;
+    background-size: cover;
+    height: 130px;
+    padding: 0 5%;
+    width: 05%;
+}
+
+.logo-restaurante .logo-tinjo {
+    background-image: url("../img/logo-tinjo.png");
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+
+.info-restaurante h2 {
+    margin-top: 8%;
+}
+
+.logo-restaurante .hacer-pedido-reservar {
+    background-position: center;
+    background-size: cover;
+    height: 35px;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 5%;
+}
+
+.hacer-pedido-reservar {
+    background-position: center;
+    background-size: cover;
+    height: 35px;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 2%;
+}
+
+.boton-hacer-pedido {
+    background-color: #A8293C;
+    color: #fff;
+    border: 3px solid #A8293C;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+.boton-hacer-pedido:hover {
+    background-color: #fff;
+    color: #A8293C;
+}
+
+.boton-reservar {
+    background: #A8293C;
+    border: 3px solid #A8293C;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+.boton-reservar:hover {
+    background-color: #fff;
+    color: #A8293C;
+}
+
+.hola-usuario .boton-perfil {
+    background: #8e7a3d;
+    border: 1px solid #8e7a3d;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 12px;
+}
+
+.boton-info-restaurante {
+    background: #A8293C;
+    border: 1px solid #8e7a3d;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 12px;
+}
+
+.boton-info-restaurante:hover {
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.info-restaurante {
+    width: 50.6%;
+    background-position: center;
+    display: block;
+    margin: auto;
+    color: #A8293C;
+}
+
+.opcion-menu {
+    background-image: url("../img/comida-tinjo.jpg");
+    background-position: right;
+    background-size: cover;
+    height: 450px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-restaurante h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.info-restaurante p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: #8e7a3d;
+}
+
+.menu {
+    background-color: #A8293C;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #A8293C;
+    border-radius: 8px;
+    width: 75%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.menu h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: underline
+}
+
+.menu h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px;
+    width: 100%;
+    padding-right: 150px;
+}
+
+.menu p {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding-left: 100px;
+    justify-content: space-evenly;
+    color: #d7b957;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    align-self: center;
+    /*  flex: ;
+    color: #1f060a;
+    font-size: 16px;*/
+}
+
+
+/*Navigation*/
+
+.nav-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0000;
+    text-shadow: 0.5px 0.5px 0.5px #A8293C;
+    font-size: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 20px 0;
+}
+
+.nav-logo {
+    width: 180px;
+}
+
+
+/*Nav izquierda*/
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px
+}
+
+.nav-main ul.nav-menu-right {
+    margin-right: 50px;
+}
+
+.nav-main ul li a {
+    padding: 6px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #A8293C;
+}
