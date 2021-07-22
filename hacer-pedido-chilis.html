@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hacer-pedido-chilis.css">
+
+    <title>
+        Hacer Pedido
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav-main">
+                <img src="img/logo-comidaqui.JPG" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/Pagina-inicio-cliente.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/ListaRestaurantes.html">Restaurantes</a>
+                    </li>
+                    <li>
+                        <a href="perfil-cliente.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+        <main>
+            <section id="mostrar-menu">
+                <h1>Menú</h1>
+
+                <div class="card-container">
+                    <div class="card">
+                        <header>
+                            <img src="img/GUACAMOLE.jpg" alt="Guacamole">
+                        </header>
+                        <div class="card-body">
+                            <h5>Entradas</h5>
+
+                            <label>
+                            <input type="checkbox" id="cbox" value="checkbox"> Guacamole con tortillitas</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Bolitas de queso</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Alitas de pollo</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Chili con tortillitas</label><br>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <header>
+                            <img src="img/ensalada.jpg" alt="Ensalada">
+                        </header>
+                        <div class="card-body">
+                            <h5>Ensaladas</h5>
+                            <label>
+                            <input type="checkbox" id="cbox" value="checkbox"> Quesadilla explosión</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Ensalada César</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Ensalada con pollo</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Ensalada mixta de pollo y carne</label><br>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <header>
+                            <img src="img/HAMBURGUESA.jpg" alt="Hamburguesas">
+                        </header>
+                        <div class="card-body">
+                            <h5>Plato principal</h5>
+
+                            <label>
+                            <input type="checkbox" id="cbox" value="checkbox"> Hamburguesa especial</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Quesadilla de pollo o carne</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Pasta en salsa blanca</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Fajitas de res</label><br>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <header>
+                            <img src="img/postres.jpg" alt="Postres">
+                        </header>
+                        <div class="card-body">
+                            <h5>Postres</h5>
+
+                            <label>
+                            <input type="checkbox" id="cbox" value="checkbox"> Molten de chocolate</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Pie de limón</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Brownie con helado</label><br>
+                            <input type="checkbox" id="cbox" value="checkbox"> Cheesecake</label><br>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hacer-pago">
+                    <a href="metodo-pago.html" class="boton-hacer-pago">HACER PAGO</a>
+                </div>
+
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

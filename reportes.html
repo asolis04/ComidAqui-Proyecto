@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaAqui</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Custom CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <!--Custom-->
+    <link rel="stylesheet" href="css/configuracion-plantilla.css">
+    <link rel="stylesheet" href="css/pagina-principal.css">
+    <link rel="stylesheet" href="css/comentarios.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-main">
+                <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="perfiles.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="/configuracion-plantilla.html">Configuración</a>
+                    </li>
+                    <li>
+                        <a id="enlaceCerrar">Cerrar Sesión</a>
+                    </li>
+                </ul>
+                <!-- Right Nav -->
+
+            </nav>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="/admin-usuarios.html" id="adm-usuarios">Administrar Usuarios</a></li>
+                <li><a href="/aceptar-solicitudes.html" id="aceptar-usuarios">Aceptar Usuario</a></li>
+                <li><a href="/impuestos.html" id="admin-impuestos">Impuesto</a></li>
+                <li><a href="/tiempoDeReserva.html" id="admin-tiempoReserva">Tiempo de Reserva</a></li>
+                <li><a href="/clasificacion-platos.html" id=configuracion-platos>Configuración de Platos</a></li>
+                <li><a href="/registrar-platos.html" id="registrar-platos">Registrar Platos</a></li>
+                <li><a href="/registro-menu.html" id="admin-menu">Menú</a></li>
+                <li><a href="/administrar-restaurantes.html" id="admin-restaurante">Restaurantes</a></li>
+                <li><a href="/agregar-encargado.html" id="admin-gerente">Agregar Encargado</a></li>
+                <li><a href="/administrar-comentario.html" id="admin-comentarios">Comentarios</a></li>
+                <li><a href="/reportes.html" id="admin-reportes">Reportes</a></li>
+            </ul>
+        </nav>
+
+        <article id="principal">
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li>
+                        <input id="boton-config" type="button" value="Agregar">
+                    </li>
+                    <li>
+                        <input id="boton-listar" type="button" value="Listar">
+                    </li>
+                    <!--     <li>
+                        <a id="boton-activar" href="#">Activar</a>
+                    </li>
+                    <li>
+                        <a id="boton-desactivar" href="#">Desactivar</a>
+                    </li>
+                    <li>
+                        <a id="boton-eliminar" href="#">Eliminar</a>
+                    </li>
+                </ul>
+                Right Nav -->
+
+            </nav>
+            <div id="segundParte">
+                <p>No implementado </p>
+            </div>
+
+            <div id="listar-restau" class="listarRestau">
+
+
+            </div>
+    </div>
+    <!--Config-->
+    </div>
+    </article>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/comentarios.js"></script>
+    <script src="/js/configuracion-nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaAqui</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Custom CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <!--Custom-->
+    <link rel="stylesheet" href="css/configuracion-plantilla.css">
+    <link rel="stylesheet" href="css/pagina-principal.css">
+    <link rel="stylesheet" href="css/registrar-metodo-pago.css">
+    <link rel="stylesheet" href="css/listar-metodo-pago.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-main">
+                <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/Pagina-inicio-cliente.html">Página Principal</a>
+                    </li>
+                    <li>
+                        <a href="perfil-cliente.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="enlaceCerrar">Cerrar Sesión</a>
+                    </li>
+                </ul>
+                <!-- Right Nav -->
+
+            </nav>
+        </header>
+
+        <article id="principal">
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li>
+                        <input id="boton-config" type="button" value="Agregar">
+                    </li>
+                    <li>
+                        <input id="boton-listar" type="button" value="Listar">
+                    </li>
+                    <!--     <li>
+                        <a id="boton-activar" href="#">Activar</a>
+                    </li>
+                    <li>
+                        <a id="boton-desactivar" href="#">Desactivar</a>
+                    </li>
+                    <li>
+                        <a id="boton-eliminar" href="#">Eliminar</a>
+                    </li>
+                </ul>
+                Right Nav -->
+
+            </nav>
+
+            <div id="segundParte">
+                <div id="conf-metodoPago">
+
+                    <header>
+                        <nav id=barra_de_inicio>
+                            <div class="banner-principal">
+                                <h2>Agregar método de pago</h2>
+                                <i class="fas fa-credit-card-front"></i>
+                            </div>
+                        </nav>
+                    </header>
+                    <br>
+
+                    <form id="sctForm">
+                        <div>
+                            <label for="tipoTarjeta">Tipo de tarjeta *</label>
+                            <select id="tipoTarjeta" name="tipoTarjeta" required>
+                                <option  value = "Visa">Visa</option>
+                                <option value = "MasterCard">Master Card</option>
+                                <option value = "AmericanExpress">American Express</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="numeroTarjeta">Número de tarjeta *</label>
+                            <input type="text" id="numeroTarjeta" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="fechaExpiracion">Fecha de Expiración *</label>
+                            <input type="date" id="fechaExpiracion" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="CVC">CVC *</label>
+                            <input type="password" id="CVC" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="nombreTarjeta">Nombre en tarjeta *</label>
+                            <input type="text" id="nombreTarjeta" required>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="button" id="btnRegistrar">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="listar-metodoPago" class="listarMetodoPago">
+
+                <header id="headerPrincipal">
+
+                    <section class="inferior">
+                        <div>
+                            <h2>Métodos de pago</h2>
+                            <i class="fas fa-credit-card-front"></i>
+                        </div>
+                    </section>
+                </header>
+                <main>
+                    <section id="sctTarjetasRegistradas">
+                        <div>
+                            <label for="txtFiltro">Filtrar:</label>
+                            <input type="text" id="txtFiltro">
+                        </div>
+                        <table id="tblTarjetas">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Número</th>
+                                    <th>Expiración</th>
+                                    <th>Nombre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+
+                    </section>
+                </main>
+
+            </div>
+    </div>
+    <!--Config-->
+    </div>
+    </article>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Script-->
+    <script src="js/registro-metodo-pago.js"></script>
+    <script src="js/listar-metodo-pago.js"></script>
+</body>
+
+</html>

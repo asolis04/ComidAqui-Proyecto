@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaAqui</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/perfiles.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!--Menu principal-->
+        <header class="header">
+            <nav class="nav-main">
+                <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="perfiles.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="/configuracion-plantilla.html">Configuración</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+        <main id="cod-superadmin-perfil">
+            <div id="divFoto">
+                <p>Súper Administrador</p>
+                <p id="nombrePerfil"></p>
+                <img id="FotoUsuario" src="img/fotoAna.jpg" alt="FotoUsuario">
+
+            </div>
+            <section id="sctInformacionPerfil">
+                <table>
+                    <tr>
+                        <th>Información</th>
+                        <th>Configuración</th>
+                        <th>Mantenimiento</th>
+                    </tr>
+                    <tr>
+                        <td id="correoPerfiles">davakweb@gmail.com</td>
+                        <td><a class="perfil-options" href="editar-perfil-admin.html">Editar perfil</a></td>
+                        <td>
+                            <a class="perfil-options" href="configuracion-plantilla.html" id="superAdminConfig">Configuración del sistema</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="fechaNacimientoPerfil"></td>
+                        <td> </td>
+
+                    </tr>
+                    <tr>
+                        <td id="cedualPerfil">1-2345-6789</td>
+                        <td> </td>
+                        <!--<td> <a href="/informacion-restaurantes.html" id="superAdminConfig">Restaurantes</a></td> -->
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> </td>
+
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <main id="cod-encargado-perfil">
+            <div id="divFoto">
+                <p>Encargado del Restaurante</p>
+                <p id="nombrePerfilEncargado"></p>
+                <img id="FotoUsuario" src="img/fotoVivi.jpeg" alt="FotoUsuario">
+
+            </div>
+            <section id="sctInformacionPerfil">
+                <table>
+                    <tr>
+                        <th>Información</th>
+                        <th>Configuración</th>
+                        <th>Restaurante</th>
+                    </tr>
+                    <tr>
+                        <td id="correoPerfilEncargado">davakweb@gmail.com</td>
+                        <td><a class="perfil-options" href="editar-perfil-encargado.html">Editar perfil</a></td>
+                        <td>
+                            <a class="perfil-options" href="/configuracion-plantilla.html" id="EncargadoConfig">Configuración del Sistema</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="fechaNacimientoPerfilEncargado"></td>
+                        <td> </td>
+                        <td> <a class="perfil-options" href="/administrar-pedidos.html" id="Administrar-Pedidos">Administrar Pedidos</a></td>
+
+                    </tr>
+                    <tr>
+                        <td id="cedualPerfilEncargado">1-2345-6789</td>
+                        <td> </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> </td>
+
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <main id="cod-dueno-perfil">
+            <div id="divFoto">
+                <p>Dueño del Restaurante</p>
+                <p id="nombrePerfilDueno"></p>
+                <img id="FotoUsuario" src="/img/fotoAda.jpg" alt="FotoUsuario">
+
+            </div>
+            <section id="sctInformacionPerfil">
+                <table>
+                    <tr>
+                        <th>Información</th>
+                        <th>Configuración</th>
+                        <th>Restaurante</th>
+                    </tr>
+                    <tr>
+                        <td id="correoPerfilDueno">davakweb@gmail.com</td>
+                        <td><a class="perfil-options" href="editar-perfil-dueno.html">Editar perfil</a></td>
+                        <td>
+                            <a class="perfil-options" href="configuracion-plantilla.html" id="superAdminConfig">Configuración del Sistema</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="fechaNacimientoPerfilDueno"></td>
+                        <td> </td>
+
+                    </tr>
+                    <tr>
+                        <td id="cedualPerfilDueno">1-0345-0789</td>
+                        <td> </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> </td>
+
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <section class="social">
+
+                <div class="links">
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                </div>
+                <h3>ComidAqui Copyright</h3>
+
+        </footer>
+        </section>
+        </section>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Script-->
+    <script src="/js/dashboards.js"></script>
+    <script src="/js/perfiles.js"></script>
+
+
+</body>
+
+</html>

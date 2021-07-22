@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaAqui</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Fonts H2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Letra general-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/pagina-principal.css">
+    <link rel="stylesheet" href="css/login-register.css">
+
+</head>
+
+<body>
+    <!--Formulario de Registro-->
+    <div id="register-container" class="register-container">
+        <div class="register-modal">
+            <section class="form-registro">
+                <form action="" class="form-information">
+                    <h3>¡Regístrate!</h3>
+                    <div class="info-register">
+                        <label for="name-registro">Nombre completo*</label>
+                        <input type="text" id="name-registro">
+
+                        <label for="email-registro">Correo electrónico*</label>
+                        <input type="text" id="email-registro">
+
+                        <label for="fecha-nacimientoR">Fecha de nacimiento*</label>
+                        <input type="date" id="fecha-nacimientoR">
+
+                        <label for="tipo-usuarioR">Tipo usuario *</label>
+                        <select id="tipo-usuarioR" name="tipo-Usuario">
+                            <option  value = "usuario-select">Tipo de usuario</option>
+                            <option value = "duenno">Dueño del restaurante</option>
+                            <option value = "cliente">Cliente</option>
+                            <option value = "gerente">Encargado del Restaurante</option>
+                        </select>
+                        <input type="button" value="Registrarte" id="enviar-register">
+                        <input type="button" value="Cerrar" id="close-register">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!--Formulario de Login-->
+    <div id="login-container" class="login-container">
+        <div class="login-modal">
+            <section class="form-login">
+                <form action="" class="form-information">
+                    <h3>Inicio Sesión</h3>
+                    <div class="info-login">
+                        <label for="email-Login">Correo electrónico *</label>
+                        <input type="text" id="email-Login">
+
+                        <label for="contrasenna-login">Contraseña *</label>
+                        <div class="password-container">
+                            <input type="password" id="contrasenna-login">
+                            <span class="far fa-eye" id="btnOjito">
+                        </div>
+                        <a href="#">
+                            <label for="olvidoContrasena" id="olvido-pwd">¿Olvidaste tu contraseña?</label>
+                        </a>
+                        <input type="button" value="Ingresar" id="enviar-login">
+                        <input type="button" value="Cerrar" id="close-login">
+                        <label for="cuentaNueva">¿Nuevo en ComidAquí?</label>
+                        <a href="#" id="cuentaNueva">
+                            <label for="cuentaNueva">Crea una cuenta</label>
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!--Formulario Olvido contraseña -->
+    <div id="pwd-container" class="pwd-container">
+        <div class="pwd-modal">
+            <section class="form-pwd">
+                <form action="" class="form-information">
+                    <h3>Inicio Sesión</h3>
+                    <div class="info-pwd">
+                        <label for="email-pwd">Correo electrónico*</label>
+                        <input type="text" id="email-pwd">
+                        <input type="button" value="Enviar" id="enviar-pwd">
+                        <input type="button" value="Cerrar" id="close-pwd">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+    <!--Boton para el Menú query media-->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+        <!--Menu principal-->
+        <nav class="nav-main">
+            <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#header-welcome">Inicio</a>
+                </li>
+                <li>
+                    <a href="#restaurantes">Restaurantes</a>
+                </li>
+                <li>
+                    <a href="#servicios">Servicios</a>
+                </li>
+                <li>
+                    <a href="#reservacion">Reservación</a>
+                </li>
+                <li>
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#unase">Trabaja con nosotros</a>
+                </li>
+                <li>
+                    <a href="#" id="register">Registro</a>
+                </li>
+                <li>
+                    <a href="#" id="login">Inicio Sesión</a>
+                </li>
+            </ul>
+            <!-- Right Nav -->
+
+        </nav>
+
+        <!--SHOWCASE-->
+        <header class="header-welcome" id="header-welcome">
+            <div class="capa-gradiente">
+                <h1 class="welcome">Reserve en sus restaurantes favoritos</h1>
+                <h1 class="welcome">o pide para llevar.</h1>
+            </div>
+
+        </header>
+
+        <!--Restaurantes Cards-->
+        <h2 class="h2-mismo" id="restaurantes">Restaurantes disponibles</h2>
+        <div class="restaurante-card">
+            <div>
+                <img src="img/chilis.jpg" alt="Restaurante chilis">
+                <h3>Chili's</h3>
+                <p>En Chili's vive más cada momento. Disfruta de una deliciosa comida tipo americana.</p>
+               <!-- <a href="perfil-chilis.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a> -->
+            </div>
+            <div>
+                <img src="img/laParillitaPepe.jpg" alt="Restaurante La parrillita Pepe">
+                <h3>La Parrillita de Pepe</h3>
+                <p>Platillos como las arepas, las carnes, los pinchos un excelente sabor al mejor estilo colombiano.</p>
+              <!--  <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a> -->
+            </div>
+            <div>
+                <img src="img/nuestra-tierra.png" alt="Restaurante Nuestra Tierra">
+                <h3>Nuestra Tierra</h3>
+                <p>Se trata de un restaurante de comida típica costarricense de alto nivel.</p>
+               <!-- <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a> -->
+            </div>
+            <div>
+                <img src="img/restaurante-tin-jo.jpg" alt="Restaurante Nuestra Tierra">
+                <h3>Tin Jo</h3>
+               <p>La gastronomía tradicional converge con la cocina asiática tradicional. </p> 
+               <!-- <a href="#">Ir al restaurante <li class="fas fa-angle-double-right"></li></a> -->
+            </div>
+        </div>
+
+        <!--Servicios-->
+        <h2 class="h2-mismo" id="servicios">Servicios Disponibles</h2>
+        <div class="servicios-card">
+            <div>
+                <img src="img/delivery.jpg" alt="delivery">
+            </div>
+            <div>
+                <h3>Pide para llevar</h3>
+                <p>Puedes seleccionar en tu restaurante preferido lo que deseas consumir y pasar a retirar.</p>
+            </div>
+            <div>
+                <img src="img/comerRestaurante.jpg" alt="Restaurante Nuestra Tierra">
+            </div>
+            <div>
+                <h3>Reserva tu lugar</h3>
+                <p>Puedes reservar en tu lugar preferido.</p>
+
+            </div>
+
+        </div>
+        <!--Banner Reservación-->
+        <section class="banner" id="reservacion">
+            <h2 class="h2-mismo">¡No olvides registrarte!</h2>
+            <div class="card-container">
+                <div class="card-img">
+
+                </div>
+
+                <div class="card-content">
+
+                    <!--  <h3>Reservaciones</h3> -->
+                    <form>
+                        <!--  <div class="form-row">
+                            <select name="days">
+                                <option value = "day-select">Seleccione el día</option>
+                                <option value = "doming">Domingo</option>
+                                <option value = "lunes">Lunes</option>
+                                <option value = "martes">Martes</option>
+                                <option value = "miercoles">Miércoles</option>
+                                <option value = "jueves">Jueves</option>
+                                <option value = "viernes">Viernes</option>
+                                <option value = "sabado">Sábado</option>
+                            </select>
+
+                            <select name="Hora">
+                                <option value = "hour-select">Hora</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option>
+                            </select>
+                        </div> -->
+
+                        <!-- <div class="form-row">
+                            <input type="text" placeholder="Nombre Completo">
+                            <select name="select-restaurantes">
+                                <option value = "select-rest">Seleccione el restaurante</option>
+                                <option value = "chilis">Chili's</option>
+                                <option value = "parrillita">La Parrillita De Pepe</option>
+                                <option value = "nuestraTierra">Nuestra Tierra</option>
+                                <option value = "Tin-Jo">Tin Jo</option>
+                            </select>
+                        </div> -->
+
+                        <div class="form-row">
+                            <!--  <input type="number" placeholder="Cantid. Personas?" min="1"> -->
+                            <input type="submit" value="Registro" id="registerSecond">
+                            <input type="submit" value="Inicio Sesión" id="inicioSecond">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--Banner Explora-->
+
+        <section class="cards-banner-one" id="nosotros">
+            <div class="content">
+                <h2 class="h2-mismo">Nosotros</h2>
+                <p>Hacer reservaciones en línea, realizar pedidos para retirar, leer reseñas de restaurantes de comensales, pagar en línea o puedes pagar en el lugar.</p>
+            </div>
+        </section>
+        <!--Unanse a nosotros-->
+        <section class="form-nosotros" id="unase">
+            <!--<h2 class="unase">Restauranteros, únanse a nosotros</h2>-->
+            <section class="contact-info">
+                <section class="info-title">
+                    <span class="fa fa-user-circle"></span>
+                            <h3>Información de Contacto</h3>
+            </section>
+            <section class="info-items">
+                <p><span class="fa fa-envelope"></span>comidAqui@gmail.com</p>
+                <p><span class="fa fa-mobile"></span>89021548</p>
+            </section>
+            </section>
+            <form action="" class="form-contact" id="frm-registreRestaurante">
+                <h3>Registra tu restaurante</h3>
+                <div class="user-info">
+                    <label for="names">Nombre *</label>
+                    <input type="text" id="names" required>
+
+                    <label for="phone">Teléfono / Celular </label>
+                    <input type="text" id="phone">
+
+                    <label for="email">Correo electrónico *</label>
+                    <input type="text" id="email" required>
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" required></textarea>
+
+                    <input type="reset" value="Enviar Información" id="btn">
+
+                </div>
+            </form>
+            </section>
+            <footer class="footer">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62879.694995559876!2d-84.14845041624139!3d9.935543822227915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e342c50d15c5%3A0xe6746a6a9f11b882!2zU2FuIEpvc8Op!5e0!3m2!1ses!2scr!4v1625712852935!5m2!1ses!2scr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <section class="social">
+
+                    <div class="links">
+
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+
+                    </div>
+                    <h3>ComidAqui Copyright</h3>
+            </footer>
+
+            </section>
+
+            </div>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <!--ScrollReveal-->
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="js/pagina-principal.js"></script>
+            <script src="js/inicio-sesion.js"></script>
+</body>
+
+</html>

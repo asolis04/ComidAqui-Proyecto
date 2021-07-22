@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaAqui</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Custom CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/perfiles.css">
+    <link rel="stylesheet" href="css/perfil-encargado-restaurante.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!--Menu principal-->
+        <header class="header">
+            <nav class="nav-main">
+                <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/Pagina-inicio-cliente.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/Pagina-inicio-cliente.html">Reservación</a>
+                    </li>
+                    <li>
+                        <a href="perfil-cliente.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main id="cod-cliente-perfil">
+            <div id="divFoto">
+                <p id="nombrePerfilCliente"></p>
+                <img id="FotoUsuario" src="img/FotoKayla.jpg" alt="FotoUsuario">
+
+            </div>
+            <section id="sctInformacionPerfil">
+                <table>
+                    <tr>
+                        <th>Información</th>
+                        <th>Configuración</th>
+                        <th>Favoritos</th>
+                    </tr>
+                    <tr>
+                        <td id="correoPerfilCliente">davakweb@gmail.com</td>
+                        <td>
+                            <a class="perfil-options" href="configurar-metodo-pago.html" id="metodoPago">Método de Pago</a></td>
+                        <td>
+                            <a id="restauranteUno">Nombre del Restaurante</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="fechaNacimientoPerfilCliente"></td>
+                        <td><a class="perfil-options" href="editar-perfli-cliente.html ">Editar perfil</a></td>
+                        <td>
+                            <a id="restauranteDos">Nombre del Restaurante</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td id="cedualPerfilCliente">1-2345-6789</td>
+                        <td></td>
+                        <td>
+                            <a id="restauranteTres">Nombre del Restaurante</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> </td>
+
+                    </tr>
+                </table>
+            </section>
+        </main>
+        </section>
+
+        </section>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal "></script>
+    <!--Script-->
+    <script src="/js/perfil-cliente.js "></script>
+
+
+
+</body>
+
+</html>

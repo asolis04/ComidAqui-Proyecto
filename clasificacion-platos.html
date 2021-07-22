@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaAqui</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Custom-->
+    <link rel="stylesheet" href="css/configuracion-plantilla.css">
+    <link rel="stylesheet" href="css/pagina-principal.css">
+    <link rel="stylesheet" href="css/clasificacion-platos.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-main">
+                <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="perfiles.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="/configuracion-plantilla.html">Configuración</a>
+                    </li>
+                    <li>
+                        <a id="enlaceCerrar">Cerrar Sesión</a>
+                    </li>
+                </ul>
+                <!-- Right Nav -->
+
+            </nav>
+        </header>
+
+
+        <nav class="menu">
+            <ul>
+                <li><a href="/admin-usuarios.html" id="adm-usuarios">Administrar Usuarios</a></li>
+                <li><a href="/aceptar-solicitudes.html" id="aceptar-usuarios">Aceptar Usuario</a></li>
+                <li><a href="/impuestos.html" id="admin-impuestos">Impuesto</a></li>
+                <li><a href="/tiempoDeReserva.html" id="admin-tiempoReserva">Tiempo de Reserva</a></li>
+                <li><a href="/clasificacion-platos.html">Configuración de Platos</a></li>
+                <li><a href="/registrar-platos.html" id="registrar-platos">Registrar Platos</a></li>
+                <li><a href="/registro-menu.html" id="admin-menu">Menú</a></li>
+                <li><a href="/administrar-restaurantes.html" id="admin-restaurante">Restaurantes</a></li>
+                <li><a href="/agregar-encargado.html" id="admin-gerente">Agregar Encargado</a></li>
+                <li><a href="/administrar-comentario.html" id="admin-comentarios">Comentarios</a></li>
+                <li><a href="/reportes.html" id="admin-reportes">Reportes</a></li>
+            </ul>
+        </nav>
+
+        <article id="principal">
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li>
+                        <input id="boton-config" type="button" value="Configurar">
+                    </li>
+                    <li>
+                        <input id="boton-listar" type="button" value="Listar">
+                    </li>
+                    <!--     <li>
+                        <a id="boton-activar" href="#">Activar</a>
+                    </li>
+                    <li>
+                        <a id="boton-desactivar" href="#">Desactivar</a>
+                    </li>
+                    <li>
+                        <a id="boton-eliminar" href="#">Eliminar</a>
+                    </li>
+                </ul>
+                Right Nav -->
+
+            </nav>
+
+            <div id="segundParte">
+                <div id="conf-clasificacion-platos">
+
+                    <br>
+                    <section id="sctForm">
+                        <h2>Características y clasificación de los platos</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <form>
+                            <div>
+                                <label for="">Restaurante</label>
+                                <select id="slt-restaurante" required>
+                                    <option value="">- Seleccionar restaurante -</option>
+                                    <option value="Chilis">Chili´s</option>
+                                    <option value="Parrillita">La Parrillita de Pepe</option>
+                                    <option value="NuestraTierra">Nuestra Tierra</option>
+                                    <option value="TsunamiSushi">Tsunami Sushi</option>
+                                    <option value="TinJo">Tin Jo</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="txt-usuario">Buscar plato:</label>
+                                <input type="search" id="txt-usuario" required>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div>
+                                <label for="">Características especiales</label>
+                                <select id="libreGluten" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="libreGluten">Libre de gluten</option>
+                                    <option value="Contiene gluten">Contiene gluten</option>                 
+                                </select>
+                                <select id="bajoCalorias" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Bajo en calorías">Bajo en calorías</option>
+                                    <option value="Más de 500 calorías">Más de 500 calorías</option>                                                                 
+                                </select>
+                                <select id="vegano" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Vegano">Vegano</option>
+                                    <option value="No vegano">No vegano</option>                                                                 
+                                </select>
+                                <select id="vegetariano" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Vegetariano">Vegetariano</option>
+                                    <option value="No vegetariano">No vegetariano</option>                                                                 
+                                </select>
+                                <select id="picante" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Picante">Picante</option>
+                                    <option value="Sin picante">Sin picante</option>                                                                 
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="">Clasificación</label>
+                                <select id="clasificacion" required>
+                                    <option value="">- Seleccione una opción -</option>
+                                    <option value="Entrada">Entrada</option>
+                                    <option value="Ensalada">Ensalada</option>
+                                    <option value="Plato fuerte">Plato fuerte</option>
+                                    <option value="Postre">Postre</option>                    
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <button type="button" id="btnGuardar">Guardar</button>
+                                <button type="reset" id="btnBorrar">Borrar</button>
+                            </div>
+
+                        </form>
+                    </section>
+                </div>
+
+            </div>
+
+            <div id="listar-clasificacion" class="listarClasificacion">
+
+                <div>
+                    <label for="txtFiltro">Filtrar:</label>
+                    <input type="text" id="txtFiltro">
+                </div>
+                <table id="tblClasificacion">
+                    <thead>
+                        <tr>
+                            <th>Restaurante</th>
+                            <th>Plato</th>
+                            <th>Caracteristica 1</th>
+                            <th>Caracteristica 2</th>
+                            <th>Clasificación</th>
+                        </tr>
+                    </thead>
+                    <br>
+                    <br>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+
+
+            </div>
+    </div>
+    <!--Config-->
+    </div>
+    </article>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Script-->
+
+    <script src="/js/listarClasificacion-platos.js"></script>
+    <script src="/js/clasificacion-platos.js"></script>
+</body>
+
+</html>

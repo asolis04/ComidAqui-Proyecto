@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaAqui</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Fonts H2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login-register.css">
+    <link rel="stylesheet" href="css/pagina-inicio-cliente.css">
+</head>
+
+<body>
+
+    <!--Boton para el Menú query media-->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+        <!--Menu principal-->
+        <nav class="nav-main">
+            <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+            <ul class="nav-menu">
+                <li>
+                    <a href="/Pagina-inicio-cliente.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#restaurantes">Restaurantes</a>
+                </li>
+                <li>
+                    <a href="#favoritos">Favoritos</a>
+                </li>
+                <li>
+                    <a href="#recientes">Recientes</a>
+                </li>
+                <li>
+                    <a href="#unase">Contacto</a>
+                </li>
+                <li>
+                    <a href="perfil-cliente.html">Perfil</a>
+                </li>
+                <li>
+                    <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!--Banner Reservación-->
+        <section class="banner" id="reservacion">
+            <h2 class="h2-mismo">Has tu pedido para RECOGER o disfruta en el LUGAR</h2>
+            <div class="card-container">
+                <div class="card-img">
+                    <!-- image here -->
+                </div>
+
+                <div class="card-content">
+                    <h3>Reservaciones</h3>
+                    <form id="frm-reservacion">
+                        <div class="form-row">
+                            <select id="seleccionarDia" name="days" required>
+                                <option value = "0">Seleccione el día</option>
+                                <option value = "doming">Domingo</option>
+                                <option value = "lunes">Lunes</option>
+                                <option value = "martes">Martes</option>
+                                <option value = "miercoles">Miércoles</option>
+                                <option value = "jueves">Jueves</option>
+                                <option value = "viernes">Viernes</option>
+                                <option value = "sabado">Sábado</option>
+                            </select>
+
+                            <select id="seleccionarHora" name="Hora" required>
+                                <option value = "0">Hora</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <input id="nombreCompleto" type="text" placeholder="Nombre completo" required>
+                            <select id="seleccioneRestaurante" name="select-restaurantes" required>
+                                <option value = "0">Seleccione el restaurante</option>
+                                <option value = "chilis">Chili's</option>
+                                <option value = "parrillita">La Parrillita De Pepe</option>
+                                <option value = "nuestraTierra">Nuestra Tierra</option>
+                                <option value = "Tin-Jo">Tin Jo</option>
+                            </select>
+                        </div>
+
+                        <!--  <div class="form-rowOne">
+                            <input type="text" id="nombreCompleto" placeholder="Nombre Completo">
+                            <div id="ctn-bars-search">
+                                <input type="text" id="inputSearch" placeholder="Buscar Restaurante">
+                                <table id="tbl-usuarios">
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="ctn-icon-search">
+                                <i class="fas fa-search" id="icon-search"></i>
+                            </div>
+
+                        </div>-->
+
+                        <div class="form-row">
+                            <input id="cantidPersonas" type="number" placeholder="Cantidad personas" min="1" required>
+                            <input id="btn-reservar" type="submit" value="Reserve una mesa">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--Restaurantes Cards-->
+        <h2 class="h2-mismo" id="restaurantes">Restaurantes disponibles</h2>
+        <div class="restaurante-card">
+            <div>
+                <img src="img/chilis.jpg" alt="Restaurante chilis">
+                <h3>Chili's</h3>
+                <p>En Chili's vive más cada momento. Disfruta de una deliciosa comida tipo americana.</p>
+                <a href="/perfil-chilis.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/laParillitaPepe.jpg" alt="Restaurante La parrillita Pepe">
+                <h3>La Parrillita de Pepe</h3>
+                <p>Platillos como las arepas, las carnes, los pinchos un excelente sabor al mejor estilo colombiano.</p>
+                <a href="perfill-parrillita.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/nuestra-tierra.png" alt="Restaurante Nuestra Tierra">
+                <h3>Nuestra Tierra</h3>
+                <p>Se trata de un restaurante de comida típica costarricense de alto nivel.</p>
+                <a href="/perfil-nuestra-tierra.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/restaurante-tin-jo.jpg" alt="Restaurante Nuestra Tierra">
+                <h3>Tin Jo</h3>
+                <p>La gastronomía tradicional converge con la cocina asiática tradicional. </p>
+                <a href="/perfil-TinJo.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+
+        </div>
+
+        <!--Favoritos-->
+        <h2 class="h2-mismo" id="favoritos">Favoritos</h2>
+        <div class="restaurante-card">
+            <div>
+                <img src="img/restaurante-tin-jo.jpg" alt="Restaurante Nuestra Tierra">
+                <h3>Tin Jo</h3>
+                <a href="/perfil-TinJo.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/laParillitaPepe.jpg" alt="Restaurante La parrillita Pepe">
+                <h3>La Parrillita de Pepe</h3>
+                <a href="perfill-parrillita.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/nuestra-tierra.png" alt="Restaurante Nuestra Tierra">
+                <h3>Nuestra Tierra</h3>
+                <a href="/perfil-nuestra-tierra.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/chilis.jpg" alt="Restaurante chilis">
+                <h3>Chili's</h3>
+                <a href="/perfil-chilis.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+
+        </div>
+
+        <!--Banner Recientes-->
+
+        <h2 class="h2-mismo" id="recientes">Recientes</h2>
+        <div class="restaurante-card">
+            <div>
+                <img src="img/restaurante-tin-jo.jpg" alt="Restaurante Nuestra Tierra">
+                <h3>Tin Jo</h3>
+                <a href="/perfil-TinJo.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/nuestra-tierra.png" alt="Restaurante Nuestra Tierra">
+                <h3>Nuestra Tierra</h3>
+                <a href="/perfil-nuestra-tierra.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/chilis.jpg" alt="Restaurante chilis">
+                <h3>Chili's</h3>
+                <a href="/perfil-chilis.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+            <div>
+                <img src="img/laParillitaPepe.jpg" alt="Restaurante La parrillita Pepe">
+                <h3>La Parrillita de Pepe</h3>
+                <a href="perfill-parrillita.html">Ir al restaurante <li class="fas fa-angle-double-right"></li></a>
+            </div>
+        </div>
+        <!--Unanse a nosotros-->
+        <section class="form-nosotros" id="unase">
+            <!--<h2 class="unase">Restauranteros, únanse a nosotros</h2>-->
+            <section class="contact-info">
+                <section class="info-title">
+                    <span class="fa fa-user-circle"></span>
+                    <h3>Información de Contacto</h3>
+                </section>
+                <section class="info-items">
+                    <p><span class="fa fa-envelope"></span>comidAqui@gmail.com</p>
+                    <p><span class="fa fa-mobile"></span>89021548</p>
+                </section>
+            </section>
+            <form action="" class="form-contact" id="frm-info">
+                <h3>¡Comunicate con nosotros!</h3>
+                <div class="user-info">
+                    <label for="names">Nombre *</label>
+                    <input type="text" id="names" required>
+
+                    <label for="phone">Teléfono / Celular </label>
+                    <input type="text" id="phone">
+
+                    <label for="email">Correo electrónico *</label>
+                    <input type="text" id="email" required>
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" required></textarea>
+
+                    <input type="button" value="Enviar Información" id="btn">
+
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62879.694995559876!2d-84.14845041624139!3d9.935543822227915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e342c50d15c5%3A0xe6746a6a9f11b882!2zU2FuIEpvc8Op!5e0!3m2!1ses!2scr!4v1625712852935!5m2!1ses!2scr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <section class="social">
+
+                <div class="links">
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                </div>
+                <h3>ComidAqui Copyright</h3>
+        </footer>
+
+        </section>
+
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="js/pagina-principal.js"></script>-->
+    <script src="js/inicio-sesion.js"></script>
+    <script src="js/validarReservaciones.js"></script>
+    <script src="js/validarComunicate.js"></script>
+</body>
+
+</html>

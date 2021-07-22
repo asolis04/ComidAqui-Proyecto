@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaAqui</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--Custom CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/perfiles.css">
+    <link rel="stylesheet" href="css/editar-perfiles.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!--Menu principal-->
+        <header class="header">
+            <nav class="nav-main">
+                <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="perfiles.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="/configuracion-plantilla.html">Configuración</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="Cerrar-Sesion">Cerrar Sesión</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main id="cod-editarPerfil-dueno">
+            <div class="container-dentro">
+                <div class="left box-primary">
+                    <img class="image" src="img/fotoAda.jpg" alt="Usuario">
+                    <a href="#" class="btn btn-primary btn-block"><b>Editar foto</b></a>
+                </div>
+                <div class="right tab-content">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="txtNombre">Nombre: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="txtNombre" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCorreo" class="col-sm-2 control-label">Correo: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="email" id="txtCorreo" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFechaNac" class="col-sm-2 control-label">Fecha de nacimiento: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="date" id="txtFechaNac" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 has-feedback">
+                                <label class="control-label" for="txtTipoCedula" class="form-control">Tipo de cédula: </label>
+                                <select name="txtTipoCedula" id="txtTipoCedula" required>
+                                    <option selected value="0"> Elige una opción </option>
+                                    <option value="Nacional">Nacional</option>
+                                    <option value="Pasaporte">Pasaporte</option>
+                                    <option value="Residencia">Residencia</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCedula" class="col-sm-2 control-label">Cédula: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="txtCedula" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="txtContrasenha">Contraseña</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="password" id="txtContrasenha" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="btnEditar" class="col-sm-offset-2 col-sm-10">
+                                <button type="button" id="btnGuadar" class="btn btn-danger">Guardar Cambios</button>
+                            </div>
+                        </div>
+                </div>
+
+                </form>
+            </div>
+    </div>
+
+
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <section class="social">
+
+            <div class="links">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+            </div>
+            <h3>ComidAqui Copyright</h3>
+    </footer>
+
+    </section>
+    </div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Script-->
+    <script src="/js/editar-perfil.js"></script>
+
+
+</body>
+
+</html>

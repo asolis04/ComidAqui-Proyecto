@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Font CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Custom-->
+    <link rel="stylesheet" href="css/configuracion-plantilla.css">
+    <link rel="stylesheet" href="css/pagina-principal.css">
+    <link rel="stylesheet" href="css/tiempoDeReserva.css">
+    <title>Tiempo de Reserva</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-main">
+                <img src="img/logoComidAqui.png" alt="ComidAqui Logo" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="perfiles.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="/configuracion-plantilla.html">Configuración</a>
+                    </li>
+                    <li>
+                        <a id="enlaceCerrar">Cerrar Sesión</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="/admin-usuarios.html" id="adm-usuarios">Administrar Usuarios</a></li>
+                <li><a href="/aceptar-solicitudes.html" id="aceptar-usuarios">Aceptar Usuario</a></li>
+                <li><a href="/impuestos.html" id="admin-impuestos">Impuesto</a></li>
+                <li><a href="/tiempoDeReserva.html" id="admin-tiempoReserva">Tiempo de Reserva</a></li>
+                <li><a href="/clasificacion-platos.html">Configuración de Platos</a></li>
+                <li><a href="/registrar-platos.html" id="registrar-platos">Registrar Platos</a></li>
+                <li><a href="/registro-menu.html" id="admin-menu">Menú</a></li>
+                <li><a href="/administrar-restaurantes.html" id="admin-restaurante">Restaurantes</a></li>
+                <li><a href="/agregar-encargado.html" id="admin-gerente">Agregar Encargado</a></li>
+                <li><a href="/administrar-comentario.html" id="admin-comentarios">Comentarios</a></li>
+                <li><a href="/reportes.html" id="admin-reportes">Reportes</a></li>
+            </ul>
+        </nav>
+
+        <article id="principal">
+
+            <div id="conf-TiempoReserva">
+
+                <section class="tiempoDeR">
+                    <div class="agregarTiempoDeReserva">
+                        <h2>Agregar tiempo para recibir reserva.</h2>
+                        <p>Tiempo:</p>
+                        <label form="txtTiempo"></label>
+                        <input type="number" id="txtTiempo">
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="registarTiempo">
+                        <button type="button" id="btnRegistar">Registrar</button>
+                        <a href="tiempoDeReserva.html"><button type="reset" id="Borrar">Borrar</button></a>
+                    </div>
+                </section>
+
+            </div>
+
+        </article>
+
+        <div id="segundParte">
+
+
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/tiempoDeReserva.js"></script>
+</body>
+
+</html>
